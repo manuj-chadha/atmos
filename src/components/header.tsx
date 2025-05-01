@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { useTheme } from "./context/theme-provider";
-import { Home, HomeIcon, Moon, Sun } from "lucide-react";
+import { Moon, Sun } from "lucide-react";
 import CitySearch from "./city/city-search";
-
+import  light  from "../assets/light.png";
+import  dark  from "../assets/dark.png"
 const Header= () => {
     const {theme, setTheme} = useTheme();
     const isDark= theme === "dark";
@@ -10,7 +11,7 @@ const Header= () => {
         <header className="max-w-screen sticky top-0 z-50 container border-b py-3 backdrop-blur supports-[backdrop-filter]:bg-background/90">
             <div className="container px-2 h-16 flex lg:flex-row justify-between items-center mx-auto">
                 <Link to="/" className="flex items-center justify-center gap-4">
-                    <img src={isDark ? "./src/assets/dark.png" : "./src/assets/light.png"} className="max-w-32" alt="" />
+                    <img src={isDark ? dark : light} className="max-w-32" alt="" />
                     {/* <h1 className="text-3xl font-bold  dark:gray-300">Atmos</h1> */}
                 </Link>
                 <div className="flex gap-6 items-center">

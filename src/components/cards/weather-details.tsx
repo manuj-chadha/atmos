@@ -1,4 +1,4 @@
-import { Gauge, Sunrise, Sunset, Weight, Wind } from "lucide-react";
+import { Gauge, Sunrise, Sunset, Wind } from "lucide-react";
 import { WeatherData } from "../api/types"
 import { Card, CardContent, CardHeader } from "../ui/card"
 import { format } from "date-fns";

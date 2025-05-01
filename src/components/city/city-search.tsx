@@ -1,13 +1,11 @@
 import { useState } from "react"
 import { CommandDialog, CommandEmpty, CommandGroup, CommandInput, CommandItem, CommandList } from "../ui/command"
 import { Button } from "../ui/button";
-import { Clock, Loader2, Search, Star, XCircle, XIcon } from "lucide-react";
+import { Clock, Loader2, Search, Star, XCircle } from "lucide-react";
 import { useLocationSearch } from "../hooks/use-weatherquery";
 import { useNavigate } from "react-router-dom";
-import { useLocalStorage } from "../hooks/use-local-storage";
 import { useSearchHistory } from "../hooks/use-search-history";
 import { format } from "date-fns";
-import { formatDate } from "date-fns";
 import { useFavourite } from "../hooks/use-favourite";
 
 const CitySearch=() => {
